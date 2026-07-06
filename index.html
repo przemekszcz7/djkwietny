@@ -1606,7 +1606,40 @@
         border: 1px solid rgba(255, 255, 255, 0.05);
       }
 
+      /* Global text word wrap and break properties */
+      p, h1, h2, h3, h4, h5, h6, span, a, li, button {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+      }
+
       /* --- MOBILE RESPONSIVE OVERRIDES TO FIX HORIZONTAL SCROLL & OVERFLOWS --- */
+      @media (max-width: 768px) {
+        .offer-card {
+          padding: 1.5rem !important;
+        }
+        .why-card {
+          padding: 1.5rem 1.25rem !important;
+        }
+        .timeline-card {
+          padding: 1.25rem 1rem !important;
+        }
+        .timeline-panel {
+          padding-left: 45px !important;
+        }
+        .timeline-badge {
+          left: 15px !important;
+          width: 32px !important;
+          height: 32px !important;
+          font-size: 0.8rem !important;
+        }
+        .timeline-line {
+          left: 15px !important;
+        }
+        .logo-text {
+          font-size: 1.2rem !important;
+        }
+      }
+
       @media (max-width: 640px) {
         .hero-pre-title {
           font-size: 0.75rem;
@@ -1617,7 +1650,7 @@
           width: 15px;
         }
         .hero-title {
-          font-size: 2.8rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -1629,7 +1662,19 @@
         
         /* Heading scale safety */
         .section-title {
-          font-size: 2rem;
+          font-size: 1.85rem;
+        }
+        
+        /* About details responsive tweaks */
+        .about-pitch {
+          font-size: 1.15rem !important;
+        }
+        .about-stats-grid {
+          grid-template-columns: 1fr !important;
+          gap: 1rem !important;
+        }
+        .stat-card {
+          padding: 1.25rem !important;
         }
         
         /* Outer ring safety limit */
@@ -1664,6 +1709,27 @@
           flex-direction: column;
           align-items: center;
           gap: 0.75rem;
+        }
+        
+        /* Logo and Header scale */
+        .logo-text {
+          font-size: 1.05rem !important;
+          letter-spacing: 0.1em !important;
+        }
+        .logo-glow-ring {
+          width: 42px !important;
+          height: 42px !important;
+        }
+        
+        /* Section tag scale */
+        .section-tag {
+          font-size: 0.7rem;
+          letter-spacing: 0.15em;
+        }
+        
+        /* Call to Action title safety scale */
+        .cta-title {
+          font-size: 1.75rem;
         }
       }
     </style>
