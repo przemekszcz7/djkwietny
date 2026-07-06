@@ -1,0 +1,2273 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ Kwietny | Profesjonalny DJ i Wodzirej Weselny | Kielce, Kraków, Katowice</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Luksusowa oprawa muzyczna i profesjonalne prowadzenie wesel oraz eventów premium. DJ Kwietny - Kielce, Kraków, Katowice. Sprawdź wolne terminy i stwórz imprezę marzeń!" />
+    <meta name="keywords" content="dj kwietny, wodzirej, dj na wesele, wodzirej na wesele, kielce dj, krakow dj, katowice dj, oprawa muzyczna, wesele premium, naglosnienie, oswietlenie" />
+    <meta name="author" content="DJ Kwietny" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DJ Kwietny | Profesjonalny DJ i Wodzirej Weselny" />
+    <meta property="og:description" content="Nowoczesne wesela, niezapomniane imprezy i profesjonalne prowadzenie wydarzeń. Rezerwuj termin!" />
+    <meta property="og:image" content="https://i.ibb.co/YFsXmSZb/650771611-122261407100126547-7669491361819668666-n.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/YFsXmSZb/650771611-122261407100126547-7669491361819668666-n.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      /* --- CUSTOM PREMIUM PALETTE & VARIABLES --- */
+      :root {
+        --color-black: #060606;
+        --color-graphite-dark: #0f0f11;
+        --color-graphite: #151518;
+        --color-graphite-light: #202026;
+        --color-gold: #e5c158;
+        --color-gold-bright: #f9e18f;
+        --color-gold-dark: #aa861c;
+        --color-white: #ffffff;
+        --color-gray: #a1a1aa;
+        --color-violet-neon: #8b5cf6;
+        --color-blue-neon: #3b82f6;
+        --font-editorial: 'Playfair Display', serif;
+        --font-display: 'Space Grotesk', sans-serif;
+        --font-body: 'Plus Jakarta Sans', sans-serif;
+      }
+
+      /* --- GLOBAL RESETS & STYLING --- */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        font-family: var(--font-body);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--color-black);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--color-gold-dark);
+        border-radius: 4px;
+        border: 2px solid var(--color-black);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--color-gold);
+      }
+
+      /* Typographic Utilities */
+      h1, h2, h3, h4, .font-editorial {
+        font-family: var(--font-editorial);
+      }
+      .font-display {
+        font-family: var(--font-display);
+      }
+
+      /* --- GLASSMORPHISM & SHADOWS --- */
+      .glass-card {
+        background: rgba(15, 15, 18, 0.65);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .glass-card:hover {
+        border-color: rgba(229, 193, 88, 0.25);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(229, 193, 88, 0.03);
+      }
+      .glass-card-gold {
+        background: rgba(229, 193, 88, 0.02);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(229, 193, 88, 0.12);
+        border-radius: 16px;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .glass-card-gold:hover {
+        border-color: var(--color-gold);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(229, 193, 88, 0.08);
+      }
+
+      /* --- SPOTLIGHTS & LIGHTING EFFECTS (CSS ONLY) --- */
+      .spotlight-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 1;
+      }
+      .spotlight-1 {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
+        top: -10%;
+        left: 10%;
+        filter: blur(80px);
+        animation: rotateSpotlight 25s linear infinite alternate;
+      }
+      .spotlight-2 {
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        background: radial-gradient(circle, rgba(229, 193, 88, 0.04) 0%, transparent 70%);
+        bottom: 5%;
+        right: -10%;
+        filter: blur(100px);
+        animation: pulseSpotlight 15s ease-in-out infinite alternate;
+      }
+      .spotlight-3 {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+        top: 40%;
+        right: 20%;
+        filter: blur(80px);
+      }
+      @keyframes rotateSpotlight {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(100px, 50px) scale(1.15); }
+      }
+      @keyframes pulseSpotlight {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.1); }
+      }
+
+      /* --- LAYOUT UTILITIES --- */
+      .section-container {
+        position: relative;
+        padding: 6rem 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        z-index: 2;
+      }
+      .asymmetric-offset {
+        margin-top: -2rem;
+      }
+
+      /* --- HEADER --- */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background: rgba(6, 6, 6, 0.75);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        z-index: 100;
+        transition: background 0.3s ease;
+      }
+      .header-content {
+        max-width: 1300px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      /* Logo */
+      .logo-box {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        text-decoration: none;
+      }
+      .logo-glow-ring {
+        position: relative;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: rgba(229, 193, 88, 0.1);
+        border: 2px solid var(--color-gold);
+        box-shadow: 0 0 12px rgba(229, 193, 88, 0.3), inset 0 0 8px rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .logo-text {
+        font-family: var(--font-editorial);
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        background: linear-gradient(135deg, var(--color-white) 30%, var(--color-gold) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Nav links */
+      nav {
+        display: none;
+      }
+      @media (min-width: 900px) {
+        nav {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+        }
+      }
+      .nav-link {
+        color: var(--color-gray);
+        font-family: var(--font-display);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        position: relative;
+        padding: 0.5rem 0;
+      }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--color-gold);
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover {
+        color: var(--color-white);
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* Booking header action */
+      .header-cta {
+        display: none;
+      }
+      @media (min-width: 900px) {
+        .header-cta {
+          display: block;
+        }
+      }
+      .btn-header {
+        display: inline-block;
+        padding: 0.7rem 1.6rem;
+        border-radius: 50px;
+        border: 1px solid var(--color-gold);
+        color: var(--color-gold);
+        font-family: var(--font-display);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        background: transparent;
+      }
+      .btn-header:hover {
+        background: var(--color-gold);
+        color: var(--color-black);
+        box-shadow: 0 0 15px rgba(229, 193, 88, 0.4);
+        transform: translateY(-2px);
+      }
+
+      /* Hamburger menu toggle */
+      .hamburger-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 26px;
+        height: 18px;
+        cursor: pointer;
+        z-index: 102;
+      }
+      @media (min-width: 900px) {
+        .hamburger-label {
+          display: none;
+        }
+      }
+      .hamburger-bar {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-white);
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      /* --- HERO SECTION --- */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 90px;
+        overflow: hidden;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background-image: url('https://i.ibb.co/5gWMqT3K/626220222-122257497698126547-329011920554181960-n.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(6, 6, 6, 0.2) 0%, rgba(6, 6, 6, 0.75) 100%),
+                    linear-gradient(to right, rgba(6, 6, 6, 0.4) 0%, rgba(6, 6, 6, 0.1) 100%);
+        z-index: 2;
+      }
+      .hero-content {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 4rem 1.5rem;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      .hero-pre-title {
+        font-family: var(--font-display);
+        color: var(--color-gold);
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .hero-pre-title::before, .hero-pre-title::after {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 1px;
+        background-color: var(--color-gold);
+      }
+      .hero-title {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+      }
+      @media (min-width: 640px) {
+        .hero-title {
+          font-size: 5rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .hero-title {
+          font-size: 6rem;
+        }
+      }
+      .hero-title span {
+        display: block;
+        background: linear-gradient(135deg, var(--color-white) 40%, var(--color-gold) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .hero-subtitle {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--color-white);
+        letter-spacing: 0.05em;
+      }
+      @media (min-width: 640px) {
+        .hero-subtitle {
+          font-size: 1.6rem;
+        }
+      }
+      .hero-desc {
+        color: var(--color-gray);
+        font-size: 1.05rem;
+        max-width: 580px;
+      }
+      .hero-ctas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .btn-primary {
+        display: inline-block;
+        padding: 1.1rem 2.2rem;
+        background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 100%);
+        color: var(--color-black);
+        font-family: var(--font-display);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(229, 193, 88, 0.2);
+        border: none;
+      }
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(229, 193, 88, 0.4), 0 0 20px rgba(229, 193, 88, 0.2);
+        background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
+      }
+      .btn-secondary {
+        display: inline-block;
+        padding: 1.1rem 2.2rem;
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--color-white);
+        font-family: var(--font-display);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+      }
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: var(--color-gold);
+        transform: translateY(-3px);
+      }
+
+      /* Hero Badges Grid */
+      .hero-badges-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .hero-badge-card {
+        padding: 1.25rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .hero-badge-icon {
+        color: var(--color-gold);
+        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: rgba(229, 193, 88, 0.1);
+        border: 1px solid rgba(229, 193, 88, 0.2);
+      }
+      .hero-badge-title {
+        font-family: var(--font-display);
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      /* Scroll down indicator */
+      .scroll-indicator {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--color-gray);
+        text-decoration: none;
+        font-family: var(--font-display);
+        font-size: 0.7rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+      }
+      .scroll-arrow {
+        width: 1px;
+        height: 40px;
+        background: linear-gradient(to bottom, var(--color-gold), transparent);
+        position: relative;
+        overflow: hidden;
+      }
+      .scroll-arrow::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 15px;
+        background-color: var(--color-white);
+        animation: scrollLineAnim 2s infinite ease-in-out;
+      }
+      @keyframes scrollLineAnim {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(300%); }
+      }
+
+      /* --- HAMBURGER MENU CHECKBOX HACK --- */
+      #mobile-menu-toggle {
+        display: none;
+      }
+      .mobile-menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: var(--color-black);
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.95);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      #mobile-menu-toggle:checked ~ .mobile-menu-overlay {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+      }
+      .mobile-nav-link {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        color: var(--color-white);
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        transition: color 0.3s ease;
+      }
+      .mobile-nav-link:hover {
+        color: var(--color-gold);
+      }
+      
+      /* Hamburger animations */
+      #mobile-menu-toggle:checked ~ header label span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: var(--color-gold);
+      }
+      #mobile-menu-toggle:checked ~ header label span:nth-child(2) {
+        opacity: 0;
+      }
+      #mobile-menu-toggle:checked ~ header label span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: var(--color-gold);
+      }
+
+      /* --- SECTION EDITORIAL HEADER --- */
+      .section-header {
+        margin-bottom: 4.5rem;
+        max-width: 700px;
+      }
+      .section-tag {
+        font-family: var(--font-display);
+        color: var(--color-gold);
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        display: block;
+        margin-bottom: 0.75rem;
+      }
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        margin-bottom: 1.25rem;
+      }
+      @media (min-width: 768px) {
+        .section-title {
+          font-size: 3.5rem;
+        }
+      }
+      .section-title span {
+        font-style: italic;
+        color: var(--color-gold);
+        font-family: var(--font-editorial);
+        font-weight: 400;
+      }
+      .section-divider {
+        width: 60px;
+        height: 2px;
+        background: linear-gradient(to right, var(--color-gold), transparent);
+        margin-bottom: 1.5rem;
+      }
+      .section-subtitle {
+        color: var(--color-gray);
+        font-size: 1.1rem;
+      }
+
+      /* --- O MNIE (ABOUT ME) --- */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+        align-items: center;
+      }
+      @media (min-width: 1024px) {
+        .about-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 5rem;
+        }
+      }
+      .about-visual {
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+      .about-ring-glow {
+        position: relative;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        border: 1px solid rgba(229, 193, 88, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (min-width: 640px) {
+        .about-ring-glow {
+          width: 400px;
+          height: 400px;
+        }
+      }
+      .about-ring-inner {
+        width: 85%;
+        height: 85%;
+        border-radius: 50%;
+        border: 1px dashed rgba(255, 255, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .about-ring-center {
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(229, 193, 88, 0.12) 0%, rgba(6, 6, 6, 0.8) 100%);
+        border: 1px solid rgba(229, 193, 88, 0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 40px rgba(229, 193, 88, 0.15);
+      }
+      .about-letter {
+        font-family: var(--font-editorial);
+        font-size: 7rem;
+        font-weight: 800;
+        color: var(--color-gold);
+        line-height: 1;
+        text-shadow: 0 0 20px rgba(229, 193, 88, 0.4);
+      }
+      .about-years {
+        font-family: var(--font-display);
+        font-size: 0.9rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--color-white);
+        margin-top: -0.5rem;
+      }
+      
+      /* CSS Floating Vinyl Record Effect */
+      .about-vinyl-deco {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: repeating-radial-gradient(
+          circle,
+          #111,
+          #111 2px,
+          #222 3px,
+          #222 4px
+        );
+        border: 2px solid #333;
+        top: -10px;
+        right: -10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        animation: rotateVinyl 12s linear infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .about-vinyl-center {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: var(--color-gold);
+        border: 3px solid #000;
+      }
+      @keyframes rotateVinyl {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      /* About text contents */
+      .about-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .about-pitch {
+        font-size: 1.35rem;
+        font-weight: 600;
+        line-height: 1.4;
+        color: var(--color-white);
+      }
+      .about-text {
+        color: var(--color-gray);
+        font-size: 1.05rem;
+      }
+      .about-stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+      .stat-card {
+        padding: 1.5rem;
+      }
+      .stat-value {
+        font-family: var(--font-display);
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--color-gold);
+        line-height: 1;
+        margin-bottom: 0.25rem;
+      }
+      .stat-label {
+        font-family: var(--font-body);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        color: var(--color-white);
+        letter-spacing: 0.05em;
+      }
+
+      /* Animated CSS Soundwave */
+      .soundwave-box {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        height: 50px;
+        margin-top: 1rem;
+      }
+      .soundwave-bar {
+        width: 4px;
+        height: 10px;
+        background: linear-gradient(to top, var(--color-gold-dark), var(--color-gold));
+        border-radius: 10px;
+        animation: soundwaveBounce 1.2s ease-in-out infinite alternate;
+      }
+      .soundwave-bar:nth-child(2) { animation-delay: 0.15s; }
+      .soundwave-bar:nth-child(3) { animation-delay: 0.3s; }
+      .soundwave-bar:nth-child(4) { animation-delay: 0.45s; }
+      .soundwave-bar:nth-child(5) { animation-delay: 0.6s; }
+      .soundwave-bar:nth-child(6) { animation-delay: 0.2s; }
+      .soundwave-bar:nth-child(7) { animation-delay: 0.35s; }
+      .soundwave-bar:nth-child(8) { animation-delay: 0.5s; }
+      @keyframes soundwaveBounce {
+        0% { height: 10px; }
+        100% { height: 45px; }
+      }
+
+      /* --- OFERTA (OFFER) --- */
+      .offer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      @media (min-width: 768px) {
+        .offer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1024px) {
+        .offer-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .offer-card {
+        position: relative;
+        padding: 2.5rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: justify;
+        height: 100%;
+        z-index: 2;
+      }
+      .offer-card-large {
+        grid-column: 1 / -1;
+      }
+      @media (min-width: 1024px) {
+        .offer-card-large {
+          grid-column: span 2;
+        }
+      }
+      .offer-icon-badge {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+      }
+      .offer-card-title {
+        font-family: var(--font-display);
+        font-size: 1.45rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.85rem;
+        color: var(--color-white);
+      }
+      .offer-card-desc {
+        color: var(--color-gray);
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+      }
+      .offer-features-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: auto;
+      }
+      .offer-feature-pill {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0.4rem 0.85rem;
+        border-radius: 50px;
+        font-size: 0.75rem;
+        font-family: var(--font-display);
+        color: var(--color-gray);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .offer-card:hover .offer-feature-pill {
+        border-color: rgba(229, 193, 88, 0.2);
+        color: var(--color-white);
+      }
+
+      /* --- DLACZEGO WARTO (WHY CHOOSE ME) --- */
+      .why-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      @media (min-width: 768px) {
+        .why-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 1024px) {
+        .why-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      .why-card {
+        padding: 2.2rem 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+      }
+      .why-icon-css {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background: rgba(229, 193, 88, 0.08);
+        border: 1px solid rgba(229, 193, 88, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-gold);
+        font-weight: 700;
+        box-shadow: 0 0 15px rgba(229, 193, 88, 0.05);
+      }
+      .why-card:hover .why-icon-css {
+        background: var(--color-gold);
+        color: var(--color-black);
+        box-shadow: 0 0 20px rgba(229, 193, 88, 0.4);
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+      }
+      .why-title {
+        font-family: var(--font-display);
+        font-size: 1.15rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: var(--color-white);
+      }
+      .why-desc {
+        color: var(--color-gray);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      /* --- JAK WYGLĄDA WSPÓŁPRACA (TIMELINE) --- */
+      .timeline-box {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+      .timeline-line {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, var(--color-gold) 0%, rgba(229, 193, 88, 0.15) 100%);
+      }
+      @media (min-width: 768px) {
+        .timeline-line {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .timeline-item {
+        position: relative;
+        margin-bottom: 4.5rem;
+      }
+      .timeline-item::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .timeline-badge {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--color-black);
+        border: 2px solid var(--color-gold);
+        box-shadow: 0 0 15px rgba(229, 193, 88, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-gold);
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 0.95rem;
+        z-index: 5;
+        transform: translateX(-50%);
+      }
+      @media (min-width: 768px) {
+        .timeline-badge {
+          left: 50%;
+        }
+      }
+      .timeline-panel {
+        width: 100%;
+        padding-left: 60px;
+        float: right;
+      }
+      @media (min-width: 768px) {
+        .timeline-panel {
+          width: 44%;
+          padding-left: 0;
+        }
+        .timeline-item:nth-child(even) .timeline-panel {
+          float: left;
+          text-align: right;
+        }
+        .timeline-item:nth-child(odd) .timeline-panel {
+          float: right;
+          text-align: left;
+        }
+      }
+      .timeline-card {
+        padding: 2rem;
+      }
+      .timeline-step-title {
+        font-family: var(--font-display);
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: var(--color-white);
+        margin-bottom: 0.5rem;
+      }
+      .timeline-step-desc {
+        color: var(--color-gray);
+        font-size: 0.95rem;
+      }
+
+      /* --- GALERIA (GALLERY) --- */
+      .gallery-wrapper {
+        position: relative;
+      }
+      .gallery-checkbox {
+        display: none;
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      @media (min-width: 640px) {
+        .gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1024px) {
+        .gallery-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .gallery-item {
+        position: relative;
+        height: 380px;
+        background: rgba(10, 10, 12, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+      .gallery-item:hover {
+        border-color: rgba(229, 193, 88, 0.4);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(229, 193, 88, 0.05);
+      }
+      .gallery-img-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        background: radial-gradient(circle, rgba(229, 193, 88, 0.02) 0%, transparent 100%);
+      }
+      .gallery-img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: transform 0.5s ease;
+      }
+      .gallery-item:hover .gallery-img {
+        transform: scale(1.03);
+      }
+      .gallery-info-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+        padding: 1.5rem;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+      }
+      .gallery-item:hover .gallery-info-overlay {
+        transform: translateY(0);
+      }
+      .gallery-tag {
+        font-family: var(--font-display);
+        font-size: 0.7rem;
+        color: var(--color-gold);
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+      .gallery-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-white);
+      }
+
+      /* Checkbox hack for expanding gallery */
+      .gallery-hidden {
+        display: none !important;
+      }
+      #gallery-toggle:checked ~ .gallery-grid .gallery-hidden {
+        display: flex !important;
+        animation: fadeInUp 0.6s ease forwards;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Gallery button label style */
+      .gallery-btn-container {
+        text-align: center;
+        margin-top: 3.5rem;
+      }
+      .gallery-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1.1rem 2.5rem;
+        border: 1px solid var(--color-gold);
+        color: var(--color-gold);
+        font-family: var(--font-display);
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: transparent;
+      }
+      .gallery-btn:hover {
+        background: var(--color-gold);
+        color: var(--color-black);
+        box-shadow: 0 0 20px rgba(229, 193, 88, 0.4);
+        transform: translateY(-2px);
+      }
+      .gallery-btn-icon {
+        transition: transform 0.3s ease;
+      }
+      .show-less-text {
+        display: none;
+      }
+      #gallery-toggle:checked ~ .gallery-btn-container .show-more-text {
+        display: none;
+      }
+      #gallery-toggle:checked ~ .gallery-btn-container .show-less-text {
+        display: inline;
+      }
+      #gallery-toggle:checked ~ .gallery-btn-container .gallery-btn-icon {
+        transform: rotate(180deg);
+      }
+
+      /* --- OPINIE (REVIEWS) --- */
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      @media (min-width: 1024px) {
+        .reviews-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        /* Asymmetric magazine offset look */
+        .reviews-grid .glass-card:nth-child(1) {
+          transform: translateY(20px);
+        }
+        .reviews-grid .glass-card:nth-child(3) {
+          transform: translateY(-20px);
+        }
+      }
+      .review-card {
+        padding: 3rem 2.2rem;
+        position: relative;
+      }
+      .review-stars {
+        color: var(--color-gold);
+        font-size: 1.1rem;
+        margin-bottom: 1.25rem;
+        display: flex;
+        gap: 0.2rem;
+      }
+      .review-text {
+        color: var(--color-gray);
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        font-style: italic;
+      }
+      .review-author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .review-avatar-placeholder {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-black);
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+      .review-author-info h4 {
+        font-family: var(--font-display);
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--color-white);
+      }
+      .review-author-info p {
+        font-size: 0.8rem;
+        color: var(--color-gold);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      /* --- CTA SECTION --- */
+      .cta-section {
+        position: relative;
+        padding: 8rem 1.5rem;
+        background: linear-gradient(to right, #000 0%, #151518 100%);
+        border-top: 1px solid rgba(229, 193, 88, 0.1);
+        border-bottom: 1px solid rgba(229, 193, 88, 0.1);
+        text-align: center;
+        overflow: hidden;
+      }
+      .cta-glow-overlay {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle, rgba(229, 193, 88, 0.06) 0%, transparent 80%);
+        pointer-events: none;
+      }
+      .cta-content {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+      .cta-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        font-weight: 800;
+      }
+      @media (min-width: 640px) {
+        .cta-title {
+          font-size: 3.5rem;
+        }
+      }
+      .cta-title span {
+        display: block;
+        background: linear-gradient(135deg, var(--color-white) 40%, var(--color-gold) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .cta-btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+      .btn-cta-phone {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1.1rem 2.5rem;
+        background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 100%);
+        color: var(--color-black);
+        font-family: var(--font-display);
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 50px;
+        box-shadow: 0 0 25px rgba(229, 193, 88, 0.35);
+        transition: all 0.3s ease;
+      }
+      .btn-cta-phone:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 35px rgba(229, 193, 88, 0.6);
+        background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
+      }
+      .btn-cta-fb {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1.1rem 2.5rem;
+        background: rgba(24, 119, 242, 0.1);
+        border: 1px solid rgba(24, 119, 242, 0.4);
+        color: #ffffff;
+        font-family: var(--font-display);
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+      }
+      .btn-cta-fb:hover {
+        background: rgba(24, 119, 242, 0.2);
+        border-color: #1877f2;
+        box-shadow: 0 0 20px rgba(24, 119, 242, 0.3);
+        transform: translateY(-3px);
+      }
+
+      /* --- KONTAKT (CONTACT) --- */
+      .contact-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 700px;
+        margin: 0 auto;
+        width: 100%;
+      }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2.2rem;
+        width: 100%;
+      }
+      .contact-lead {
+        font-size: 1.25rem;
+        color: var(--color-gray);
+      }
+      .contact-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+      }
+      .contact-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        text-align: center;
+      }
+      .contact-icon-frame {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: rgba(229, 193, 88, 0.05);
+        border: 1px solid rgba(229, 193, 88, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-gold);
+        font-size: 1.1rem;
+        flex-shrink: 0;
+      }
+      .contact-detail-title {
+        font-family: var(--font-display);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-gold);
+        margin-bottom: 0.2rem;
+      }
+      .contact-detail-value {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--color-white);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      a.contact-detail-value:hover {
+        color: var(--color-gold);
+      }
+      
+      /* Operation area styles */
+      .operation-area-box {
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .area-header {
+        font-family: var(--font-display);
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      .area-cities {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+      }
+      .area-city {
+        background: rgba(229, 193, 88, 0.08);
+        border: 1px solid rgba(229, 193, 88, 0.2);
+        padding: 0.5rem 1.1rem;
+        border-radius: 6px;
+        font-family: var(--font-display);
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--color-gold-bright);
+      }
+      .area-note {
+        font-size: 0.85rem;
+        color: var(--color-gray);
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .area-note span {
+        color: var(--color-gold);
+      }
+
+      /* Premium Contact Form */
+      .contact-form-card {
+        padding: 3rem;
+      }
+      .form-title {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.8rem;
+        letter-spacing: -0.01em;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      @media (min-width: 640px) {
+        .form-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .form-group-full {
+        grid-column: 1 / -1;
+      }
+      .form-label {
+        font-family: var(--font-display);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-gray);
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      .form-control {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 0.9rem 1.2rem;
+        color: var(--color-white);
+        font-family: var(--font-body);
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+      }
+      .form-control:focus {
+        outline: none;
+        border-color: var(--color-gold);
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 0 10px rgba(229, 193, 88, 0.15);
+      }
+      textarea.form-control {
+        resize: vertical;
+        min-height: 120px;
+      }
+      .btn-form-submit {
+        width: 100%;
+        padding: 1.1rem;
+        background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 100%);
+        color: var(--color-black);
+        font-family: var(--font-display);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+        box-shadow: 0 4px 15px rgba(229, 193, 88, 0.15);
+      }
+      .btn-form-submit:hover {
+        background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
+        box-shadow: 0 6px 25px rgba(229, 193, 88, 0.3);
+        transform: translateY(-2px);
+      }
+
+      /* --- FOOTER --- */
+      footer {
+        background-color: #030304;
+        border-top: 1px solid rgba(255, 255, 255, 0.02);
+        padding: 4rem 1.5rem 2.5rem 1.5rem;
+      }
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+      }
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+      .footer-link {
+        color: var(--color-gray);
+        text-decoration: none;
+        font-family: var(--font-display);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: color 0.3s ease;
+      }
+      .footer-link:hover {
+        color: var(--color-gold);
+      }
+      .footer-divider {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.04);
+      }
+      .footer-bottom {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .footer-bottom {
+          flex-direction: row;
+        }
+      }
+      .copyright {
+        color: var(--color-gray);
+        font-size: 0.85rem;
+        text-align: center;
+      }
+      .copyright span {
+        color: var(--color-gold);
+      }
+      .credit-badge {
+        font-family: var(--font-display);
+        font-size: 0.75rem;
+        color: var(--color-gray);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        padding: 0.4rem 1rem;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- Hamburger Menu Checkbox -->
+    <input type="checkbox" id="mobile-menu-toggle" />
+
+    <!-- Sticky Header -->
+    <header>
+      <div class="header-content">
+        <!-- Logo -->
+        <a href="#" class="logo-box">
+          <div class="logo-glow-ring">
+            <img src="https://i.ibb.co/YFsXmSZb/650771611-122261407100126547-7669491361819668666-n.jpg" alt="DJ Kwietny" class="logo-img" />
+          </div>
+          <span class="logo-text">DJ KWIETNY</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav>
+          <a href="#o-mnie" class="nav-link">O mnie</a>
+          <a href="#oferta" class="nav-link">Oferta</a>
+          <a href="#dlaczego-warto" class="nav-link">Dlaczego warto</a>
+          <a href="#wspolpraca" class="nav-link">Współpraca</a>
+          <a href="#galeria" class="nav-link">Galeria</a>
+          <a href="#kontakt" class="nav-link">Kontakt</a>
+        </nav>
+
+        <!-- Header CTA -->
+        <div class="header-cta">
+          <a href="#kontakt" class="btn-header">Rezerwacja</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <label for="mobile-menu-toggle" class="hamburger-label">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-menu-overlay">
+      <a href="#o-mnie" class="mobile-nav-link" onclick="document.getElementById('mobile-menu-toggle').checked = false">O mnie</a>
+      <a href="#oferta" class="mobile-nav-link" onclick="document.getElementById('mobile-menu-toggle').checked = false">Oferta</a>
+      <a href="#dlaczego-warto" class="mobile-nav-link" onclick="document.getElementById('mobile-menu-toggle').checked = false">Dlaczego warto</a>
+      <a href="#wspolpraca" class="mobile-nav-link" onclick="document.getElementById('mobile-menu-toggle').checked = false">Współpraca</a>
+      <a href="#galeria" class="mobile-nav-link" onclick="document.getElementById('mobile-menu-toggle').checked = false">Galeria</a>
+      <a href="#kontakt" class="mobile-nav-link" onclick="document.getElementById('mobile-menu-toggle').checked = false">Kontakt</a>
+      <a href="#kontakt" class="btn-primary" style="margin-top: 1rem; font-size: 0.8rem; padding: 0.9rem 1.8rem;" onclick="document.getElementById('mobile-menu-toggle').checked = false">Zarezerwuj termin</a>
+    </div>
+
+    <!-- MAIN APP CONTENT -->
+    <main>
+      
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <!-- Interactive ambient glow lights -->
+        <div class="spotlight-wrapper">
+          <div class="spotlight-1"></div>
+          <div class="spotlight-2"></div>
+        </div>
+
+        <div class="hero-content">
+          <!-- Text and CTA -->
+          <div class="hero-text-container">
+            <div class="hero-pre-title">Ekskluzywne Eventy & Wesela</div>
+            <h1 class="hero-title">
+              DJ Kwietny
+              <span>Wodzirej</span>
+            </h1>
+            <p class="hero-subtitle">DJ &bull; Wodzirej na Twoją Imprezę</p>
+            <p class="hero-desc">
+              Nowoczesne wesela, niezapomniane imprezy i profesjonalne prowadzenie wydarzeń. Klasa, kultura sceniczna i niespotykana energia dopasowana specjalnie dla Ciebie.
+            </p>
+            <div class="hero-ctas">
+              <a href="#kontakt" class="btn-primary">Zarezerwuj termin</a>
+              <a href="#galeria" class="btn-secondary">Zobacz realizacje</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll anchor indicator -->
+        <a href="#o-mnie" class="scroll-indicator">
+          <span>Odkryj</span>
+          <div class="scroll-arrow"></div>
+        </a>
+      </section>
+
+      <!-- O MNIE SECTION -->
+      <section class="section-container" id="o-mnie" style="scroll-margin-top: 90px;">
+        <div class="spotlight-wrapper">
+          <div class="spotlight-3" style="top: 10%;"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left graphical visual -->
+          <div class="about-visual">
+            <div class="about-ring-glow">
+              <div class="about-ring-inner">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right descriptive text -->
+          <div class="about-details">
+            <div class="section-header" style="margin-bottom: 2rem;">
+              <span class="section-tag">Poznajmy się</span>
+              <h2 class="section-title">Pasja, kultura i <span>nieposkromiona energia</span></h2>
+              <div class="section-divider"></div>
+            </div>
+
+            <p class="about-pitch text-gold" style="color: var(--color-gold);">
+              Tworzę unikalne widowiska muzyczno-rozrywkowe dla najbardziej wymagających klientów.
+            </p>
+            <p class="about-text">
+              Nazywam się DJ Kwietny. Moja miłość do muzyki oraz wieloletnie doświadczenie na scenie pozwalają mi tworzyć niesamowity klimat na każdym wydarzeniu. Łączę cechy dynamicznego i nowoczesnego DJ-a ze stylem oraz nienaganną kulturą osobistą charyzmatycznego wodzireja.
+            </p>
+            <p class="about-text">
+              Nie stosuję przestarzałych schematów czy przaśnych zabaw. Moje imprezy charakteryzują się nowoczesnym podejściem, wyszukaną selekcją muzyczną, świetnym kontaktem z gośćmi w każdym wieku oraz niespożytą energią, która natychmiast wypełnia parkiet. Każdą realizację traktuję całkowicie indywidualnie, dopasowując repertuar i scenariusz bezpośrednio pod Wasze marzenia.
+            </p>
+
+            <!-- Soundwave visualizer decoration -->
+            <div class="soundwave-box">
+              <div class="soundwave-bar"></div>
+              <div class="soundwave-bar"></div>
+              <div class="soundwave-bar"></div>
+              <div class="soundwave-bar"></div>
+              <div class="soundwave-bar"></div>
+              <div class="soundwave-bar"></div>
+              <div class="soundwave-bar"></div>
+              <div class="soundwave-bar"></div>
+              <span class="font-display" style="font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-gold); margin-left: 1rem;">LIVE ENERGY PROFILE</span>
+            </div>
+
+            <!-- Stats counter mockups -->
+            <div class="about-stats-grid">
+              <div class="glass-card stat-card text-center">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Zadowolenia</div>
+              </div>
+              <div class="glass-card stat-card text-center">
+                <div class="stat-value">Ekskluzywne</div>
+                <div class="stat-label">Zabawy z klasą</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFERTA SECTION -->
+      <section class="section-container" id="oferta" style="scroll-margin-top: 90px;">
+        <div class="section-header text-center" style="margin: 0 auto 4.5rem auto;">
+          <span class="section-tag">Nasze usługi</span>
+          <h2 class="section-title">Szeroki wachlarz <span>niezapomnianych przeżyć</span></h2>
+          <div class="section-divider" style="margin: 0 auto 1.5rem auto;"></div>
+          <p class="section-subtitle">Każdy event planowany jest od A do Z z troską o najmniejszy szczegół wizualny i muzyczny.</p>
+        </div>
+
+        <div class="offer-grid">
+          <!-- Card 1 (Large - Wesela) -->
+          <div class="glass-card-gold offer-card offer-card-large">
+            <span class="offer-icon-badge">💍</span>
+            <h3 class="offer-card-title">Wesela Premium</h3>
+            <p class="offer-card-desc">
+              Kompleksowa oprawa muzyczna, oświetleniowa i kulturalne prowadzenie wesela marzeń. Tworzymy spersonalizowany scenariusz dostosowany do Waszych życzeń, od wejścia na salę aż po ostatni taniec. Łączymy pokolenia przy najlepszych rytmach.
+            </p>
+            <div class="offer-features-list">
+              <span class="offer-feature-pill">Wesele z klasą</span>
+              <span class="offer-feature-pill">Wyciszony wokal</span>
+              <span class="offer-feature-pill">Klasyczne i nowoczesne bity</span>
+              <span class="offer-feature-pill">Wodzirejstwo premium</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-card offer-card">
+            <span class="offer-icon-badge">🎉</span>
+            <h3 class="offer-card-title">Poprawiny z Klasą</h3>
+            <p class="offer-card-desc">
+              Przedłużenie doskonałej zabawy weselnej. Luźniejsza atmosfera, świetna energetyczna muzyka, która regeneruje siły i znowu przyciąga gości na parkiet.
+            </p>
+            <div class="offer-features-list">
+              <span class="offer-feature-pill">Chillout & Energy</span>
+              <span class="offer-feature-pill">Integracja</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card offer-card">
+            <span class="offer-icon-badge">🏢</span>
+            <h3 class="offer-card-title">Eventy firmowe</h3>
+            <p class="offer-card-desc">
+              Wyjątkowa i dynamiczna atmosfera na bankietach, galach i imprezach integracyjnych. Podkreślamy profesjonalny wizerunek Twojej marki na scenie.
+            </p>
+            <div class="offer-features-list">
+              <span class="offer-feature-pill">Bankiety</span>
+              <span class="offer-feature-pill">Gale</span>
+              <span class="offer-feature-pill">Integracje</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="glass-card offer-card">
+            <span class="offer-icon-badge">🎓</span>
+            <h3 class="offer-card-title">Studniówki & Bale</h3>
+            <p class="offer-card-desc">
+              Nowoczesna energia klubowa, profesjonalne nagłośnienie i show oświetleniowe, które zamienią bal maturalny w prawdziwy festiwal.
+            </p>
+            <div class="offer-features-list">
+              <span class="offer-feature-pill">Clubbing vibe</span>
+              <span class="offer-feature-pill">Bale</span>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="glass-card offer-card">
+            <span class="offer-icon-badge">🎂</span>
+            <h3 class="offer-card-title">Urodziny & Jubileusze 🥂</h3>
+            <p class="offer-card-desc">
+              Kameralne lub huczne świętowanie najważniejszych rocznic w Waszym życiu. Muzyka idealnie skrojona pod gust jubilatów oraz ich gości.
+            </p>
+            <div class="offer-features-list">
+              <span class="offer-feature-pill">Rocznice</span>
+              <span class="offer-feature-pill">Urodziny</span>
+            </div>
+          </div>
+
+          <!-- Card 6 (Large - DJ i Wodzirej) -->
+          <div class="glass-card-gold offer-card offer-card-large">
+            <span class="offer-icon-badge">🎧</span>
+            <h3 class="offer-card-title">Duet Idealny: DJ & Wodzirej</h3>
+            <p class="offer-card-desc">
+              Połączenie najwyższej jakości sztuki miksowania muzyki na żywo jako nowoczesny DJ z taktownym, elokwentnym i pełnym humoru prowadzeniem imprezy jako profesjonalny wodzirej. Kontroluję tempo wydarzeń, integruję gości i dbam o nieprzerwaną zabawę z pełną klasą.
+            </p>
+            <div class="offer-features-list">
+              <span class="offer-feature-pill">Miksowanie na żywo</span>
+              <span class="offer-feature-pill">Animacja gości</span>
+              <span class="offer-feature-pill">Brak kiczowatych żartów</span>
+              <span class="offer-feature-pill">Savoir-vivre na scenie</span>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="glass-card offer-card">
+            <span class="offer-icon-badge">🔊</span>
+            <h3 class="offer-card-title">Nagłośnienie & Oświetlenie 💡</h3>
+            <p class="offer-card-desc">
+              Klubowy i koncertowy sprzęt nagłośnieniowy najwyższej jakości. Inteligentne, dekoracyjne oświetlenie sali, które nadaje ekskluzywnego blasku.
+            </p>
+            <div class="offer-features-list">
+              <span class="offer-feature-pill">Scenotechnika</span>
+              <span class="offer-feature-pill">Ambient Lights</span>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="glass-card offer-card">
+            <span class="offer-icon-badge">🎵</span>
+            <h3 class="offer-card-title">Indywidualny Repertuar</h3>
+            <p class="offer-card-desc">
+              Brak sztywnej playlisty. Elastycznie reaguję na nastrój na parkiecie, łącząc Wasze ulubione gatunki z największymi hitami wszech czasów.
+            </p>
+            <div class="offer-features-list">
+              <span class="offer-feature-pill">Dedykacje</span>
+              <span class="offer-feature-pill">Miks generacyjny</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DLACZEGO WARTO SECTION -->
+      <section class="section-container" id="dlaczego-warto" style="scroll-margin-top: 90px;">
+        <div class="section-header" style="max-width: 800px;">
+          <span class="section-tag">Nasze atuty</span>
+          <h2 class="section-title">Standard premium, <span>który robi różnicę</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Dbamy o najwyższą kulturę i pełen komfort gości. Zobacz, co gwarantuje pełen sukces Twojego przyjęcia.</p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Card 1 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-css">&#10003;</div>
+            <h4 class="why-title">Nowoczesny sprzęt</h4>
+            <p class="why-desc">Nagłośnienie o krystalicznym brzmieniu i zaawansowane oświetlenie architektoniczne.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-css">&#10003;</div>
+            <h4 class="why-title">Profesjonalne prowadzenie</h4>
+            <p class="why-desc">Taktowne animacje, eleganckie słowo i wyczucie dynamiki parkietu.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-css">&#10003;</div>
+            <h4 class="why-title">Wysoka kultura</h4>
+            <p class="why-desc">Ubiór typu Black Tie, szacunek do gości i nienaganny język bez przaśności.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-css">&#10003;</div>
+            <h4 class="why-title">Elastyczny repertuar</h4>
+            <p class="why-desc">Szeroki wybór od ponadczasowych klasyków retro po najświeższe hity klubowe.</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-css">&#10003;</div>
+            <h4 class="why-title">Zabawy z klasą</h4>
+            <p class="why-desc">Zabawy integracyjne stymulujące naturalną i radosną integrację wszystkich gości.</p>
+          </div>
+          <!-- Card 6 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-css">&#10003;</div>
+            <h4 class="why-title">Kontakt z gośćmi</h4>
+            <p class="why-desc">Błyskawiczne nawiązywanie relacji i otwartość na bieżące sugestie uczestników.</p>
+          </div>
+          <!-- Card 7 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-css">&#10003;</div>
+            <h4 class="why-title">Pełne zaangażowanie</h4>
+            <p class="why-desc">100% energii i koncentracji od pierwszej minuty przygotowań do samego końca imprezy.</p>
+          </div>
+          <!-- Card 8 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-css">&#10003;</div>
+            <h4 class="why-title">Niezapomniana atmosfera</h4>
+            <p class="why-desc">Dźwięki, światła i emocje, które zamieniają salę w tętniący życiem wulkan radości.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- JAK WYGLĄDA WSPÓŁPRACA SECTION -->
+      <section class="section-container" id="wspolpraca" style="scroll-margin-top: 90px;">
+        <div class="section-header text-center" style="margin: 0 auto 5rem auto;">
+          <span class="section-tag">Droga do sukcesu</span>
+          <h2 class="section-title">Jak wygląda <span>nasza współpraca?</span></h2>
+          <div class="section-divider" style="margin: 0 auto 1.5rem auto;"></div>
+          <p class="section-subtitle">Każdy krok planujemy wspólnie, aby w dniu imprezy jedynym Waszym zadaniem była beztroska zabawa.</p>
+        </div>
+
+        <div class="timeline-box">
+          <!-- Timeline Line Decoration -->
+          <div class="timeline-line"></div>
+
+          <!-- Step 1 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">01</div>
+            <div class="timeline-panel">
+              <div class="glass-card timeline-card">
+                <h3 class="timeline-step-title">Pierwszy Kontakt</h3>
+                <p class="timeline-step-desc">Zadzwoń lub napisz. Omówimy wstępnie termin, lokalizację imprezy oraz Wasze główne oczekiwania i pomysły na to wyjątkowe wydarzenie.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">02</div>
+            <div class="timeline-panel">
+              <div class="glass-card timeline-card">
+                <h3 class="timeline-step-title">Omówienie wydarzenia</h3>
+                <p class="timeline-step-desc">Organizujemy spotkanie (osobiste lub online), na którym dokładnie analizujemy styl imprezy, preferencje muzyczne i oczekiwania Waszych gości.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">03</div>
+            <div class="timeline-panel">
+              <div class="glass-card timeline-card">
+                <h3 class="timeline-step-title">Przygotowanie scenariusza</h3>
+                <p class="timeline-step-desc">Tworzymy spersonalizowany harmonogram imprezy minuta po minucie, zawierający dedykacje, główne atrakcje oraz starannie wyselekcjonowane utwory.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">04</div>
+            <div class="timeline-panel">
+              <div class="glass-card timeline-card">
+                <h3 class="timeline-step-title">Realizacja imprezy</h3>
+                <p class="timeline-step-desc">Przyjeżdżamy na miejsce z dużym wyprzedzeniem, montujemy profesjonalny sprzęt nagłośnieniowo-oświetleniowy i dbamy o nienaganny wystrój stanowiska.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">05</div>
+            <div class="timeline-panel">
+              <div class="glass-card timeline-card">
+                <h3 class="timeline-step-title">Niezapomniana zabawa</h3>
+                <p class="timeline-step-desc">Wychodzimy na scenę z pełną energią! Prowadzimy imprezę z dbałością o każdy detal, dbając o pękający w szwach parkiet i uśmiech gości aż do białego rana.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIA SECTION -->
+      <section class="section-container" id="galeria" style="scroll-margin-top: 90px;">
+        <div class="section-header" style="max-width: 800px;">
+          <span class="section-tag">Nasze realizacje</span>
+          <h2 class="section-title">Galeria pełna <span>prawdziwych emocji</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Zobacz kadry z luksusowych wesel i niezapomnianych eventów, na których budowaliśmy atmosferę radosnego świętowania.</p>
+        </div>
+
+        <!-- Checkbox Hack Gallery Container -->
+        <div class="gallery-wrapper">
+          <input type="checkbox" id="gallery-toggle" class="gallery-checkbox" />
+          
+          <div class="gallery-grid">
+            <!-- Image 1 -->
+            <div class="gallery-item">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/1YWTQDgg/722859722-122271265484126547-4402926103952384543-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Wesele Premium</span>
+                <h4 class="gallery-title">Szaleństwo na parkiecie</h4>
+              </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="gallery-item">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/prsn8GSh/720101275-122271265508126547-8240468545725910978-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Ekskluzywne Oświetlenie</span>
+                <h4 class="gallery-title">Magia barw i refleksów</h4>
+              </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="gallery-item">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/KxYbK43Y/725147494-122271265916126547-5156944665709637850-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Nocne Show</span>
+                <h4 class="gallery-title">Klimatyczny dym i reflektory</h4>
+              </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="gallery-item">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/rRcFfMpq/725067449-122271265934126547-5503854900776919058-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Wodzirej w Akcji</span>
+                <h4 class="gallery-title">Nawiązanie relacji z gośćmi</h4>
+              </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="gallery-item">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/21FTDpwg/739782127-122272910180126547-2936989532299325717-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Wyjątkowy Moment</span>
+                <h4 class="gallery-title">Pierwszy taniec w chmurach</h4>
+              </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="gallery-item">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/8LdSxHHd/737730534-122272910564126547-4462549233335506774-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Luksusowa Sala</span>
+                <h4 class="gallery-title">Blask scenicznych świateł</h4>
+              </div>
+            </div>
+
+            <!-- HIDDEN IMAGES FOR EXPAND (GALLERY CHECKBOX HACK) -->
+            <!-- Image 7 -->
+            <div class="gallery-item gallery-hidden">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/v6j4qHqJ/739295121-122272910804126547-1370215124987901711-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Interakcja</span>
+                <h4 class="gallery-title">Pełna integracja pokoleń</h4>
+              </div>
+            </div>
+
+            <!-- Image 8 -->
+            <div class="gallery-item gallery-hidden">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/Tq8Z4rbt/739699293-122272910996126547-5888674383842129457-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Zabawa</span>
+                <h4 class="gallery-title">Energia do samego końca</h4>
+              </div>
+            </div>
+
+            <!-- Image 9 -->
+            <div class="gallery-item gallery-hidden">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/hRb18hS8/740326079-122272911242126547-6232909938445673532-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Klasa Sceniczna</span>
+                <h4 class="gallery-title">Nowoczesne stanowisko dj-skie</h4>
+              </div>
+            </div>
+
+            <!-- Image 10 -->
+            <div class="gallery-item gallery-hidden">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/3Y0xJLVn/740183901-122272911350126547-6663645064925078560-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">Show Time</span>
+                <h4 class="gallery-title">Koncertowa oprawa przyjęcia</h4>
+              </div>
+            </div>
+
+            <!-- Image 11 -->
+            <div class="gallery-item gallery-hidden">
+              <div class="gallery-img-container">
+                <img src="https://i.ibb.co/YFsXmSZb/650771611-122261407100126547-7669491361819668666-n.jpg" alt="Realizacja DJ Kwietny" class="gallery-img" loading="lazy" />
+              </div>
+              <div class="gallery-info-overlay">
+                <span class="gallery-tag">DJ Kwietny Profil</span>
+                <h4 class="gallery-title">Z pasji do muzyki i sceny</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expand Trigger Button -->
+          <div class="gallery-btn-container">
+            <label for="gallery-toggle" class="gallery-btn">
+              <span class="show-more-text">Pokaż więcej zdjęć</span>
+              <span class="show-less-text">Zwiń galerię</span>
+              <span class="gallery-btn-icon">&#x25BC;</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- BIG EFFECTIVE CTA SECTION -->
+      <section class="cta-section">
+        <div class="cta-glow-overlay"></div>
+        <div class="cta-content">
+          <h2 class="cta-title">
+            Zadbaj o imprezę, którą Twoi goście
+            <span>będą wspominać przez lata</span>
+          </h2>
+          <p class="about-text" style="font-size: 1.15rem; max-width: 600px;">
+            Sprawdź wolny termin i wspólnie zaplanujmy wyjątkowe, eleganckie i dynamiczne wydarzenie dla Twoich bliskich.
+          </p>
+          <div class="cta-btns">
+            <a href="tel:787615501" class="btn-cta-phone">
+              <span>Zadzwoń: 787 615 501</span>
+            </a>
+            <a href="https://www.facebook.com/djkwietny.wodzirej/" target="_blank" class="btn-cta-fb">
+              <span>Znajdź na Facebooku</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- KONTAKT SECTION -->
+      <section class="section-container" id="kontakt" style="scroll-margin-top: 90px;">
+        <div class="contact-grid">
+          
+          <!-- Left side detail columns -->
+          <div class="contact-info">
+            <div class="section-header text-center" style="margin-bottom: 1.5rem; display: flex; flex-direction: column; align-items: center;">
+              <span class="section-tag">Skontaktuj się</span>
+              <h2 class="section-title">Zbudujmy coś <span>wyjątkowego</span></h2>
+              <div class="section-divider" style="margin: 0 auto;"></div>
+            </div>
+            
+            <p class="contact-lead">
+              Napisz lub zadzwoń, a przygotuję dla Ciebie darmową, spersonalizowaną ofertę cenową i ramy scenariusza.
+            </p>
+
+            <div class="contact-list">
+              <!-- Detail phone -->
+              <div class="contact-item">
+                <div class="contact-icon-frame">&#9742;</div>
+                <div>
+                  <div class="contact-detail-title">Rezerwacje & Booking</div>
+                  <a href="tel:787615501" class="contact-detail-value">787 615 501</a>
+                </div>
+              </div>
+
+              <!-- Detail FB -->
+              <div class="contact-item">
+                <div class="contact-icon-frame">&#128100;</div>
+                <div>
+                  <div class="contact-detail-title">Facebook</div>
+                  <a href="https://www.facebook.com/djkwietny.wodzirej/" target="_blank" class="contact-detail-value">fb.com/djkwietny.wodzirej</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operations region area box -->
+            <div class="glass-card operation-area-box" style="margin-top: 1rem;">
+              <h4 class="area-header">
+                <span>&#128205;</span> Obszar działania
+              </h4>
+              <div class="area-cities">
+                <span class="area-city">Kielce</span>
+                <span class="area-city">Katowice</span>
+                <span class="area-city">Kraków</span>
+              </div>
+              <p class="area-note">
+                <span>&bull;</span> Realizujemy prestiżowe wydarzenia <strong>na terenie całego kraju</strong> po wcześniejszym uzgodnieniu.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <!-- Logo footer branding -->
+        <a href="#" class="logo-box">
+          <div class="logo-glow-ring" style="width: 44px; height: 44px;">
+            <img src="https://i.ibb.co/YFsXmSZb/650771611-122261407100126547-7669491361819668666-n.jpg" alt="DJ Kwietny" class="logo-img" />
+          </div>
+          <span class="logo-text" style="font-size: 1.15rem;">DJ KWIETNY</span>
+        </a>
+
+        <!-- Footer Map Navigation links -->
+        <div class="footer-links">
+          <a href="#o-mnie" class="footer-link">O mnie</a>
+          <a href="#oferta" class="footer-link">Oferta</a>
+          <a href="#dlaczego-warto" class="footer-link">Dlaczego warto</a>
+          <a href="#wspolpraca" class="footer-link">Współpraca</a>
+          <a href="#galeria" class="footer-link">Galeria</a>
+          <a href="#kontakt" class="footer-link">Kontakt</a>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <!-- Copyright metrics and certifications -->
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2026 <span>DJ Kwietny</span>. Wszystkie prawa zastrzeżone. Obsługa imprez.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
