@@ -51,12 +51,13 @@
         scroll-behavior: smooth;
       }
 
-      body {
+      html, body {
+        width: 100%;
+        overflow-x: hidden;
         background-color: var(--color-black);
         color: var(--color-white);
         font-family: var(--font-body);
         line-height: 1.6;
-        overflow-x: hidden;
       }
 
       /* Scrollbar */
@@ -1603,6 +1604,67 @@
         border-radius: 50px;
         background: rgba(255, 255, 255, 0.02);
         border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      /* --- MOBILE RESPONSIVE OVERRIDES TO FIX HORIZONTAL SCROLL & OVERFLOWS --- */
+      @media (max-width: 640px) {
+        .hero-pre-title {
+          font-size: 0.75rem;
+          letter-spacing: 0.15em;
+          gap: 0.5rem;
+        }
+        .hero-pre-title::before, .hero-pre-title::after {
+          width: 15px;
+        }
+        .hero-title {
+          font-size: 2.8rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        /* Prevent layout padding issues */
+        .section-container {
+          padding: 4rem 1rem;
+        }
+        
+        /* Heading scale safety */
+        .section-title {
+          font-size: 2rem;
+        }
+        
+        /* Outer ring safety limit */
+        .about-ring-glow {
+          width: 260px;
+          height: 260px;
+        }
+        
+        /* Soundwave wrapping safety */
+        .soundwave-box {
+          flex-wrap: wrap;
+          justify-content: center;
+          height: auto;
+          gap: 6px;
+        }
+        .soundwave-box span {
+          font-size: 0.7rem !important;
+          margin-left: 0.5rem !important;
+        }
+        
+        /* Button responsive scaling */
+        .btn-cta-phone, .btn-cta-fb, .btn-primary, .btn-secondary, .gallery-btn {
+          padding: 0.9rem 1.25rem;
+          font-size: 0.8rem;
+          width: 100%;
+          max-width: 300px;
+          text-align: center;
+          justify-content: center;
+        }
+        .hero-ctas, .cta-btns {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.75rem;
+        }
       }
     </style>
   </head>
